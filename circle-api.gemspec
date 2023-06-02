@@ -4,9 +4,9 @@ require_relative "lib/circle/api/version"
 
 Gem::Specification.new do |spec|
   spec.name = "circle-api"
-  spec.version = Circle::Api::VERSION
+  spec.version = Circle::VERSION
   spec.authors = ["Chadwick Wood"]
-  spec.email = ["chadwick@coffeeshopped.com"]
+  spec.email = ["chadwick@chaiandconversation.com"]
 
   spec.summary = "TODO: Write a short summary, because RubyGems requires one."
   spec.description = "TODO: Write a longer description or delete this line."
@@ -31,8 +31,8 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "faraday", ">= 1.0"
+  # spec.add_dependency "faraday_middleware", "~> 2.0"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
